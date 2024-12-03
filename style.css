@@ -1,0 +1,168 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #5629b9;
+    color: #fff;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    
+    background-size:cover;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight:bolder;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1e90ff;
+}
+
+/* Join Now button */
+.join-now {
+    padding: 15px 25px;
+    margin-right: 25px;
+    background-color: #ee7e0e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.join-now:hover {
+    background-color: #fd0d51;
+}
+
+/* Welcome Section Styling */
+.welcome-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #ce9191;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c1919;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 23px;
+    color: #555;
+    margin: 20px 0;
+    margin-bottom: 60px;
+}
+
+
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: auto;
+    overflow: hidden; /* Hide overflowing images */
+    height: 500px;
+}
+
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+   
+    
+}
+
+.slide {
+    flex: 1 0 100%;
+}
+
+.slide img {
+    width: 100%; /* Full width of the container */
+    height: 400px; /* Adjust height as required */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
+    /*
+    width: 100%;
+    display: block;
+    border-radius: 10px;*/
+}
+
+/* Navigation Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

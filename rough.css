@@ -1,0 +1,57 @@
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* You can adjust max-width as required */
+    margin: 50px auto; /* Center the carousel */
+    overflow: hidden; /* Hide overflowing images */
+    height: 500px; /* Adjust carousel box height here */
+}
+
+/* Carousel Container for the sliding effect */
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Improved transition timing */
+}
+
+/* Individual Slide Style */
+.slide {
+    flex: 1 0 100%;
+    width: 100%; /* Ensures full-width images */
+}
+
+/* Image Style */
+.slide img {
+    width: 100%; /* Ensures image width fits the container */
+    height: 100%; /* Ensures image height fills the container */
+    object-fit: cover; /* Keeps aspect ratio intact without stretching */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Navigation Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
