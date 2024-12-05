@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src = "carousal.js"></script>
 
+<head>
+    <meta charset="utf-8">
+    <title> sit-ideathon
+        
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="graphical_assets/bevel.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style1.css" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Spinner Start -->
+     <!--
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>-->
+    <!-- Spinner End -->
+     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
-            <img src="logo_bg.jpg" alt="ideathon-logo">
+            <img src="img/logo_bg.jpg" alt="ideathon-logo">
             <span>SIT Ideathon</span>
         </div>
+        <button class="hamburger" aria-label="Toggle Navigation">&#9776;</button>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Events</a></li>
@@ -23,43 +58,116 @@
         </ul>
         <a href="#" class="join-now">Register</a>
     </nav>
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+          <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-4.jpg" alt="">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Access to Quality Education</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">The Best Online Learning Platform that seamlessly combines interactive courses, expert instructors, and industry-recognized certifications, empowering learners to reach their full potential and thrive in a rapidly evolving world</p>
+                                <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="login.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-5.jpg" alt="">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Confused?</h5>
+                                <h1 class="display-3 text-white animated slideInDown">AI Based Course Recommendation System</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Get AI to Recommend you Courses Based on Your Interest</p>
+                                <a href="recommend.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">See How</a>
+                                <a href="login.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">EDUCATION FROM HOME</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Get Educated Online From Your Home</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">"Get educated online from the comfort of your home, unlocking a world of knowledge and skills with our comprehensive and accessible learning platform"</p>
+                                <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="login.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">REAL WORLD APPLICATION</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Industry Grade Projects With Internships</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">"Get to work on industry level projects, with internship application assistance from our highly skilled mentors"</p>
+                                <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="login.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">EDUCATION FOR ALL</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Multilingual Support</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">"Wide variety of languages to choose from as per as your personal preference, throughout your course.
+                                Includes both Regional as well as Internation Languages"</p>
+                                <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="login.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+
+
+
     
 
-
-    <!-- Welcome Section -->
-    <div class="welcome-section">
-        <div class="badge">
-            Siliguri Institute of Technology
-        </div>
-        <h1>Welcome to Ideathon 3.0 SIT</h1>
-        <p>At Ideathon SIT, we unite to learn, teach, and innovate together.</p>
-        <a href="#" class="join-now">Join Now</a>
-    </div>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- carousal of photos-->
-    <div class="carousel">
-        <!-- Carousel Wrapper -->
-        <div class="carousel-container">
-            <!-- Individual Slides -->
-            <div class="slide">
-                <img src="team_1.jpg" alt="Image 1">
-            </div>
-            <div class="slide">
-                <img src="nature.jpg" alt="Image 2">
-            </div>
-            <div class="slide">
-                <img src="team_1.jpg" alt="Image 3">
-            </div>
-            <div class="slide">
-                <img src="team_1.jpg" alt="Image 4">
-            </div>
-        </div>
-
-        <!-- Navigation Buttons -->
-        <button class="prev-btn">❮</button>
-        <button class="next-btn">❯</button>
-    </div>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
