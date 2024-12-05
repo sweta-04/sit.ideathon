@@ -45,6 +45,29 @@
     font-size: 2vh;
 }
 
+.topic {
+    font-family: 'Ubuntu', serif;
+    color: rgb(255, 179, 57); 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    font-size: 2vh;
+}
+
+.btn-light-orange {
+    background-color: rgb(255, 157, 0); 
+    color: white;
+
+}
+
+.btn-light-orange:hover {
+    background-color: #FF7043;
+    color: white;
+}
+
+.btn-light:hover {
+    background-color: rgb(209, 209, 209);
+}
+
 
 
 /*** Spinner ***/
