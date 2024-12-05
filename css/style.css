@@ -3,8 +3,8 @@
     max-width: 1200px; /* Set a maximum width if needed */
   }
 :root {
-    --primary: rgb(255, 179, 58);
-    --light: rgb(255, 162, 13);
+    --primary: rgb(255, 157, 0);
+    --light: rgb(255, 157, 0);
     --dark: #001797;
 }
 
@@ -24,6 +24,27 @@
     z-index: 99;
 }
 
+.minor-head{
+    font-family: 'Ubuntu', serif;
+    color: rgb(255, 179, 57); 
+    font-weight: 300; 
+    text-transform: uppercase; 
+    font-size: 2vh;
+}
+
+.major-head {
+    font-family: "Oswald", serif;
+    font-weight: 400; 
+    text-transform: uppercase; 
+}
+
+.body-head {
+    font-family: "Raleway", serif;
+    color: rgb(152, 226, 255); 
+    font-weight: 400; 
+    font-size: 2vh;
+}
+
 
 
 /*** Spinner ***/
@@ -39,6 +60,7 @@
     visibility: visible;
     opacity: 1;
 }
+
 
 
 /*** Button ***/
