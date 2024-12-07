@@ -24,6 +24,14 @@
     z-index: 99;
 }
 
+.text-orange {
+    color : #ffba0c;
+}
+
+.subheadings {
+
+}
+
 .minor-head{
     font-family: 'Ubuntu', serif;
     color: rgb(255, 179, 57); 
@@ -37,6 +45,20 @@
     font-weight: 400; 
     text-transform: uppercase; 
 }
+
+.major-head {
+    font-family: "Oswald", serif;
+    font-weight: 400; 
+    text-transform: uppercase; 
+}
+
+.topic-head {
+    font-family: "Oswald", serif;
+    font-weight: 450; 
+    text-transform: uppercase; 
+    color: rgb(255, 157, 0); 
+}
+
 
 .body-head {
     font-family: "Raleway", serif;
