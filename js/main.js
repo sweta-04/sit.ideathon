@@ -96,3 +96,34 @@
     });
     
 })(jQuery);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButtons = document.querySelectorAll(".faq-toggle");
+
+  toggleButtons.forEach(button => {
+    button.addEventListener("click", function () {
+      const currentAnswer = this.parentElement.nextElementSibling;
+
+      // Collapse all other answers
+      toggleButtons.forEach(btn => {
+        if (btn !== this) {
+          const otherAnswer = btn.parentElement.nextElementSibling;
+          btn.classList.remove("open");
+          otherAnswer.style.maxHeight = null;
+        }
+      });
+
+      // Toggle the clicked answer
+      if (currentAnswer.style.maxHeight) {
+        // Collapse the clicked answer
+        currentAnswer.style.maxHeight = null;
+        this.classList.remove("open");
+      } else {
+        // Expand the clicked answer
+        currentAnswer.style.maxHeight = currentAnswer.scrollHeight + "px";
+        this.classList.add("open");
+      }
+    });
+  });
+});

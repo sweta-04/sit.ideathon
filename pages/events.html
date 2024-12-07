@@ -13,6 +13,8 @@
     <!-- Favicon -->
     <link href="../img/logo_favicon.png" rel="icon">
 
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,27 +94,27 @@
             <div class="row g-5 align-items-center">
                 <!-- Left Side: Text -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">Welcome to</h6>
-                    <h1 class="mb-4">SIT-Ideathon</h1>
-                    <p class="mb-4">
+                    <h6 class="section-title bg-white text-start text-primary pe-3 minor-title">Welcome to</h6>
+                    <h1 class="mb-4 content-title">SIT-Ideathon</h1>
+                    <p class="mb-4 content-body">
                         SIT Ideathon aims to provide a platform for students to showcase their creativity, critical thinking, and collaborative skills.Through this platform, students can make their dreams come true by pursuing their entrepreneurial dreams in their future life. The competition was divided into two parts, one for school students of Class - IX  to XII and the other for UG and PG students.
                     </p>
-                    <h6>Foster Innovation </h6>
-                    <p>IDEATHON allows students to address real-world challenges and develop innovative
+                    <h6 class="content-body">Foster Innovation </h6>
+                    <p class="content-body">IDEATHON allows students to address real-world challenges and develop innovative
                         solutions.</p>
                 
-                    <h6>Skill Development </h6>
-                    <p>The competition encourages the development of problem-solving, teamwork,
+                    <h6 class="content-body">Skill Development </h6>
+                    <p class="content-body">The competition encourages the development of problem-solving, teamwork,
                         communication skills, and business analysis</p>
-                    <h6>Networking</h6>
-                    <p>Participants will be able to connect with like-minded individuals and industry professionals.
+                    <h6 class="content-body">Networking</h6>
+                    <p class="content-body">Participants will be able to connect with like-minded individuals and industry professionals.
                     </p>
-                    <h6>Opportunity</h6>
-                    <p>Awards & Certificates, Knowledge Sharing, Current Technology Exposure, Interaction with
+                    <h6 class="content-body">Opportunity</h6>
+                    <p class="content-body">Awards & Certificates, Knowledge Sharing, Current Technology Exposure, Interaction with
                         Industry Experts.
                     </p>
 
-                    <div class="row gy-2 gx-4 mb-4">
+                    <div class="row gy-2 gx-4 mb-4 content-bullets">
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Foster Innovation</p>
                         </div>
@@ -134,13 +136,13 @@
                     </div>
                    
 
-                    <a href="events.html" class="btn btn-light py-md-3 px-md-5 me-3 animated slideInLeft">Know more</a>
+                    <a href="register.html" class="btn btn-light py-md-3 px-md-5 me-3 animated slideInLeft">Know more</a>
                     <a href="https://forms.gle/ovzUNB6mjMqk6Y1p9" target="_blank" class="btn btn-light-orange py-md-3 px-md-5 animated slideInRight">Register Now</a>
                 </div>
                 <!-- Right Side: Image -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="position-relative" style="min-height: 400px;">
-                        <img class="img-fluid w-100 h-100" src="../img/invitation_banner.jpg" alt="Siliguri Institute of Technology" style="object-fit: cover; border-radius: 10px;">
+                        <img class="img-fluid w-100 h-100" src="../img/invitation_banner.jpg" alt="Siliguri Institute of Technology" style="object-fit: cover; border-radius: 10px; margin-top: 25px">
                     </div>
                 </div>
             </div>
@@ -148,47 +150,76 @@
     </div>
     <!--About ideathon end-->   
 
-     <!-- Ideathon list Start -->
-     <div class="container-xxl py-5">
+    <!-- Ideathon list Start -->
+    <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">HIGHLIGHTS</h6>
-                <h1 class="mb-5">Past Events</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3 minor-title">HIGHLIGHTS</h6>
+                <h1 class="mb-5 content-title">Our Legacy</h1>
             </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/logo_bg.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                               
+    
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-240 mx-auto flex flex-wrap">
+                    <div class="flex flex-wrap w-full">
+                        <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 ">
+                            <!-- 2023: Inception -->
+                            <div class="flex relative pb-12">
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider content-bullets">2023: Inception</h2>
+                                    <p class="leading-relaxed content-body">The first SIT Ideathon inspired students to innovate through an intra-institute event.</p>
+                                </div>
+                            </div>
+    
+                            <!-- 2024: Growth -->
+                            <div class="flex relative pb-12">
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider content-bullets">2024: Expansion</h2>
+                                    <p class="leading-relaxed content-body">SIT Ideathon 2.0 saw enhanced competition and greater participation.</p>
+                                </div>
+                            </div>
+    
+                            <!-- 2025: Legacy -->
+                            <div class="flex relative">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider content-bullets">2025: Beyond Boundaries</h2>
+                                    <p class="leading-relaxed content-body">SIT Ideathon 3.0 invites 100+ schools, expanding its legacy regionally.</p>
+                                </div>
                             </div>
                         </div>
-                       </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                        </div>
-                        </div>
+    
+                        <!-- Image Placeholder -->
+                        <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="../img/gal5.jpg" alt="Our Legacy">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
     <!-- Ideathon List End -->
+
+
+
 
 
     
@@ -202,7 +233,7 @@
                     <a class="btn btn-link" href="../pages/contact.html">Contact Us</a>
                     <a class="btn btn-link" href="../pages/events.html">Ideathon 2K25</a>
                     <a class="btn btn-link" href="../pages/register.html">Registration</a>
-                    <a class="btn btn-link" href="../index.html">FAQs & Help</a>
+                    <a class="btn btn-link" href="../index.html#faq">FAQs & Help</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="mb-3 topic">Contact</h4>

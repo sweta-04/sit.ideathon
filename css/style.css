@@ -32,6 +32,27 @@
 
 }
 
+.minor-title {
+    font-family: 'Ubuntu', serif;
+    font-weight: 500; 
+}
+
+.content-title {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;    
+
+}
+
+.content-body {
+    font-family: "Poppins", serif;
+}
+
+.content-bullets {
+    font-family: "Parkinsans", serif;
+}
+
 .minor-head{
     font-family: 'Ubuntu', serif;
     color: rgb(255, 179, 57); 
@@ -91,6 +112,10 @@
 }
 
 
+.img-left {
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -773,3 +798,54 @@
     background-color: #45a049;
 }
 
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .faq-toggle {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff7b2e;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-toggle.open {
+    transform: rotate(45deg);
+  }
+  
+  .faq-answer {
+    padding: 0 20px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    max-height: 0; /* Start with height 0 for animation */
+    overflow: hidden; /* Prevent content from showing during animation */
+    transition: max-height 0.3s ease-in-out; /* Animate the fly-down effect */
+  }
+  
