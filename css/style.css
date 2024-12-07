@@ -32,6 +32,27 @@
 
 }
 
+.minor-title {
+    font-family: 'Ubuntu', serif;
+    font-weight: 500; 
+}
+
+.content-title {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;    
+
+}
+
+.content-body {
+    font-family: "Poppins", serif;
+}
+
+.content-bullets {
+    font-family: "Parkinsans", serif;
+}
+
 .minor-head{
     font-family: 'Ubuntu', serif;
     color: rgb(255, 179, 57); 
@@ -91,6 +112,10 @@
 }
 
 
+.img-left {
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
 
 /*** Spinner ***/
 #spinner {
