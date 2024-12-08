@@ -145,6 +145,26 @@
     opacity: 1;
 }
 
+.btn-social1 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Deep blue for icons */
+    background-color: #FF9D00; /* Orange background */
+    border: none;
+    border-radius: 50%; /* Circular shape */
+    margin-right: 15px; /* Spacing between buttons */
+    font-size: 20px; /* Adjust icon size */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-social1:hover {
+    background-color: #FF7043; /* Slightly darker orange on hover */
+    transform: scale(1.1); /* Subtle zoom-in effect */
+    color: #cbf0ff; /* White color for icon on hover */
+}
 
 
 /*** Button ***/
