@@ -249,9 +249,31 @@ ol {
 
 
 /*** Navbar ***/
-.logo{
-    max-height : 7vh;
+/* Navbar Logo Styling */
+.logo {
+    max-height: 50px; /* Limit the logo height for all views */
+    width: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Prevent distortion */
 }
+
+/* Adjustments for Navbar Brand */
+.navbar-brand {
+    height: 70px; /* Set a fixed height for the navbar */
+    display: flex;
+    align-items: center; /* Center logo vertically */
+}
+
+/* Responsive Tweaks */
+@media (max-width: 576px) {
+    .logo {
+        max-height: 40px; /* Slightly smaller for very small screens */
+    }
+    .navbar-brand {
+        height: 60px; /* Adjust navbar height for mobile */
+    }
+}
+
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
