@@ -1002,6 +1002,12 @@ ol {
       transform: translateX(-100%);
     }
   }
+
+
+
+
+  
+
   /* Style for the popup background overlay */
   .popup-overlay {
     position: fixed;
@@ -1014,48 +1020,75 @@ ol {
     justify-content: center;
     align-items: center;
     z-index: 9999;
+
+    backdrop-filter: blur(2px); /* Apply blur to the background */
+    -webkit-backdrop-filter: blur(2px); /* For Safari */
   }
 
   /* Style for the popup content box */
   .popup-content {
     position: relative;
-    background: white;
+    background: url('../img/bg_modal.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire area */
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     text-align: center;
     max-width: 500px;
     width: 80%;
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.1s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .popup-content {
+      max-width: 600px; /* Set a max width on desktop */
+      width: 50%; /* On desktop, the modal will take 80% of the screen width */
+      height: 35%; /* On desktop, increase the height of the modal */
+    }
   }
 
   /* Close button on top-right */
   .popup-close-top-right {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #ff1744;
-    color: white;
+    top: -10px; 
+    right: -10px; 
+    background: white;
+    color: red;
     border: none;
-    font-size: 18px;
-    padding: 8px 12px;
-    border-radius: 50%;
+    font-size: 24px; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
     cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
   }
-
+  
   .popup-close-top-right:hover {
-    background: #d50000;
+    background: #ff1744; 
+    color: white; 
   }
+  
+  
 
   /* Fade-in animation */
   @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
+    from { opacity: 0; transform: scale(0.97); }
     to { opacity: 1; transform: scale(1); }
   }
 
   /* Attractive text styles */
   .popup-content h2 {
-    color: #007BFF;
+    color: rgb(43, 0, 145);
     font-size: 24px;
     margin-bottom: 15px;
   }
@@ -1074,16 +1107,33 @@ ol {
 
   /* Know More button style */
   .popup-know-more {
-    background: #28a745;
+    background: #e9762a;
     color: white;
     border: none;
     padding: 12px 25px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-  }
-
-  .popup-know-more:hover {
-    background: #218838;
+    transition: background 0.3s ease, box-shadow 0.3s ease; 
   }
   
+  .popup-know-more:hover {
+    background: #ff7037;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  /*fade out for modal*/
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Apply fade-out animation when closing the modal */
+  .popup-overlay.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
