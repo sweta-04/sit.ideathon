@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exciting Announcement!</title>
+  <style>
+    /* Style for the popup background overlay */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: none; /* Initially hidden */
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    /* Style for the popup content box */
+    .popup-content {
+      position: relative;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      max-width: 500px;
+      width: 80%;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    /* Close button on top-right */
+    .popup-close-top-right {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff1744;
+      color: white;
+      border: none;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .popup-close-top-right:hover {
+      background: #d50000;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Attractive text styles */
+    .popup-content h2 {
+      color: #007BFF;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .popup-content p {
+      color: #333;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .popup-highlight {
+      color: #FF5722;
+      font-weight: bold;
+    }
+
+    /* Know More button style */
+    .popup-know-more {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .popup-know-more:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <!-- Popup HTML -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <button class="popup-close-top-right" onclick="closePopup()">×</button>
+      <h2>✨ Exciting Opportunities Await! ✨</h2>
+      <p>
+        🏆 <span class="popup-highlight">Win Rs 10,000</span> for the top performer!<br>
+        🎯 Top 3 winners will receive <span class="popup-highlight">exclusive support</span> through the SIT Incubation Center.<br>
+        🌟 And that's not all—many more surprises await you!
+      </p>
+      <a class="popup-know-more" href="pages/events.html" >About Us</a>
+
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <h1>Welcome to Our Event</h1>
+  <p>Stay tuned for amazing updates and announcements!</p>
+
+  <script>
+    // Show the popup when the page loads
+    window.onload = function() {
+      document.getElementById('popup').style.display = 'flex';
+    };
+
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Function to redirect to event.html
+    function redirectToEvent() {
+      window.location.href = 'event.html';
+    }
+  </script>
+</body>
+</html>

@@ -93,24 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/*
-function openModal(img) {
-    const modal = document.querySelector('.modal');
-    const modalImage = document.getElementById('modal-image');
-    modalImage.src = img.src;
-    modal.style.display = "flex";
-}
-
-function closeModal(e) {
-    const modal = document.querySelector('.modal');
-    if (e.target === modal) {
-        modal.style.display = "none";
-    }
-}
-*/
-
-
-
 
 
 
@@ -234,3 +216,15 @@ function setupSwipeListeners() {
     modalContainer.removeEventListener('touchmove', touchMoveHandler);
   };
 }
+
+// Show the popup when the page loads
+window.onload = function() {
+  document.getElementById('popup').style.display = 'flex';
+};
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+
+// Function to redirect to event.html
