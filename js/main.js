@@ -53,7 +53,7 @@
     // Header carousel
     $(".header-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 3000,
+        smartSpeed: 1000,
         items: 1,
         dots: false,
         loop: true,
@@ -217,14 +217,37 @@ function setupSwipeListeners() {
   };
 }
 
+
+
 // Show the popup when the page loads
 window.onload = function() {
-  document.getElementById('popup').style.display = 'flex';
+  setTimeout(function() {
+    document.getElementById('popup').style.display = 'flex';
+  }, 2000);
 };
 
-// Function to close the popup
+// Function to close the popup with a fade-out effect
 function closePopup() {
-  document.getElementById('popup').style.display = 'none';
+  const popup = document.getElementById('popup');
+  popup.classList.add('fade-out'); 
+
+  setTimeout(function() {
+    popup.style.display = 'none'; 
+    popup.classList.remove('fade-out'); 
+  }, 500); 
 }
 
-// Function to redirect to event.html
+// Close the popup if the user clicks outside of the modal content
+window.onclick = function(event) {
+  const popup = document.getElementById('popup');
+  if (event.target === popup) {
+    closePopup();
+  }
+}
+
+// Close the popup if the ESC key is pressed
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') { 
+    closePopup();
+  }
+});
