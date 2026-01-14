@@ -8,6 +8,8 @@
     --dark: #001797;
 }
 
+
+
 ul {
     list-style-type: disc; /* Sets bullet points */
     margin-left: 20px; /* Adds indentation */
@@ -1137,3 +1139,27 @@ ol {
   .popup-overlay.fade-out {
     animation: fadeOut 0.5s ease-in-out forwards;
   }
+
+  .content-ps strong {
+    font-size: 1.5rem;
+    
+}
+
+.ps-box:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+.ps-box {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: var(--primary);   /* ORANGE */
+    border-color: var(--primary);       /* ORANGE */
+    color: #ffffff;                     /* White text */
+}
+.btn-outline-primary {
+    transition: all 0.3s ease;
+}
